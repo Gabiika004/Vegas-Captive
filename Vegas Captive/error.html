@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error - Las Vegas Casino</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Urbanist', sans-serif;
+      background-color: #222;
+      color: white;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .error-container {
+      max-width: 90%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    
+    .error-icon {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .error-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color: white;
+    }
+    
+    .error-message {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin: 1rem 0 2rem;
+      max-width: 80%;
+    }
+    
+    .reload-button {
+      background-color: #976826;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 300px;
+      margin-top: 2rem;
+    }
+    
+    .reload-button:hover {
+      background-color: #b27d2d;
+      transform: scale(1.05);
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .reload-button:hover {
+        transform: none;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="error-container">
+    
+    <!-- Warning ikon fehér felkiáltójellel -->
+    <svg class="error-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.0001 22C7.28596 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28596 2 12.0001 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12.0001 22Z" fill="#976826" fill-opacity="0.8" stroke="#976826" stroke-width="2"/>
+      <path d="M12 9V14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 17.5V17.6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    
+    <h1 class="error-title">Ooops!</h1>
+    <h2>Page not found</h2>
+    
+    <p class="error-message">
+      Please check your internet connection or try again later. Don't worry, we'll keep trying in the background.
+    </p>
+    
+    <button class="reload-button" onclick="window.location.reload()">Reload</button>
+  </div>
+  
+  <script>
+    // Automatikus újratöltés próbálkozás 30 másodpercenként
+    setTimeout(function() {
+      window.location.reload();
+    }, 30000);
+  </script>
+</body>
+</html>
