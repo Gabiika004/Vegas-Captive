@@ -1,22 +1,4 @@
-```markdown
 # Las Vegas Casino WiFi Page
-
-## Project Structure
-
-```
-
-/
-├── index.html           # Main HTML page
-├── error.html           # Error page for loading issues
-├── css/
-│   ├── normalize.css    # CSS reset
-│   └── style.css        # Main styles
-├── js/
-│   └── script.js        # JavaScript functionality
-└── public/
-└── logo.svg         # Casino logo
-
-```plaintext
 
 ## JavaScript Functionality
 
@@ -168,25 +150,7 @@ If you have any questions or issues with the code, please contact the developmen
 
 
 
-```markdown
 # Las Vegas Casino WiFi Oldal
-
-## Projekt struktúra
-
-```
-
-/
-├── index.html           # Fő HTML oldal
-├── error.html           # Hibaoldal betöltési problémák esetén
-├── css/
-│   ├── normalize.css    # CSS reset
-│   └── style.css        # Fő stílusok
-├── js/
-│   └── script.js        # JavaScript funkcionalitás
-└── public/
-└── logo.svg         # Casino logó
-
-```plaintext
 
 ## JavaScript működése
 
